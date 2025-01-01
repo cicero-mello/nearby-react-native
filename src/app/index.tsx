@@ -1,4 +1,5 @@
-import { Welcome, Steps } from "@/components"
+import { Welcome, Steps, Button } from "@/components"
+import { router } from "expo-router"
 import { View } from "react-native"
 
 const App = () => {
@@ -12,6 +13,9 @@ const App = () => {
         }}>
             <Welcome />
             <Steps />
+            <Button onPress={() => router.navigate("/home")}>
+                <Button.Title> Começar </Button.Title>
+            </Button>
         </View>
     )
 }

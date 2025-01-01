@@ -4,7 +4,7 @@ import { StyleSheet } from "react-native"
 export const s = StyleSheet.create({
     container: {
         flex: 1,
-        gap: 24,
+        gap: 24
     },
     title: {
         fontSize: 16,
