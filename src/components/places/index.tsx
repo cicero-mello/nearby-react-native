@@ -9,7 +9,6 @@ export const Places: FC<PlacesProps> = ({
     places
 }) => {
 
-    console.log(JSON.stringify(places, null, 2))
     const dimensions = useWindowDimensions()
     const bottomSheetRef = useRef<BottomSheet>(null)
 
@@ -30,7 +29,7 @@ export const Places: FC<PlacesProps> = ({
             <BottomSheetFlatList
                 data={places}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => <Place place={item} />}
+                renderItem={({ item }) => <Place place={item}/>}
                 contentContainerStyle={s.content}
                 ListHeaderComponent={() => (
                     <Text style={s.title}>
